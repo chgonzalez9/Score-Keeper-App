@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Score</string>
+    <string name="tittle">Football Match</string>
+    <string name="team1">Team 1</string>
+    <string name="team2">Team 2</string>
+    <string name="scoreTeam1">0</string>
+    <string name="scoreTeam2">0</string>
+    <string name="yellowCardTeam1">0</string>
+    <string name="redCardTeam1">0</string>
+    <string name="yellowCardTeam2">0</string>
+    <string name="redCardTeam2">0</string>
+    <string name="pointTeam1">Gol!!! +1</string>
+    <string name="pointTeam2">Gol!!! +1</string>
+    <string name="plusYellowCard1">+</string>
+    <string name="minusYellowCard1">-</string>
+    <string name="plusRedCard1">+</string>
+    <string name="minusRedCard1">-</string>
+    <string name="plusYellowCard2">+</string>
+    <string name="minusYellowCard2">-</string>
+    <string name="plusRedCard2">+</string>
+    <string name="minusRedCard2">-</string>
+    <string name="resetTeam1">Reset Score</string>
+    <string name="resetTeam2">Reset Score</string>
+    <string name="resetAll">Reset All</string>
+    <string name="description1">Football Yellow Card</string>
+    <string name="description2">Football Red Card</string>
+</resources>
