@@ -22,6 +22,7 @@
     <string name="resetTeam1">Reset Score</string>
     <string name="resetTeam2">Reset Score</string>
     <string name="resetAll">Reset All</string>
-    <string name="description1">Football Yellow Card</string>
-    <string name="description2">Football Red Card</string>
+    <string name="description1">Football Yellow Card Image.</string>
+    <string name="description2">Football Red Card Image.</string>
+    <string name="description3">Football Ball Image.</string>
 </resources>

@@ -1,19 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray">
+    android:background="@drawable/football_field">
 
     <TextView
         android:id="@+id/tittle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/football_ball"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/arbutus"
+        android:text="@string/tittle"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/football_ball"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_futbol_ball"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/tittle"
-        android:textAllCaps="true" />
+        android:contentDescription="@string/description3"/>
 
     <LinearLayout
         android:id="@+id/score"
@@ -31,18 +46,25 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/audiowide"
                 android:gravity="center"
                 android:text="@string/team1"
-                android:textAllCaps="true" />
+                android:textColor="#000000"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/scoreTeam1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:fontFamily="@font/press_start_2p"
                 android:gravity="center"
                 android:text="@string/scoreTeam1"
-                android:textColor="@android:color/holo_green_dark" />
+                android:textColor="@android:color/primary_text_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <Button
                 android:layout_width="match_parent"
@@ -50,8 +72,14 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="8dp"
+                android:background="@drawable/gol_button"
+                android:fontFamily="@font/audiowide"
                 android:onClick="golTeam1"
-                android:text="@string/pointTeam1" />
+                android:text="@string/pointTeam1"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -69,24 +97,34 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_marginStart="16dp"
+                    android:fontFamily="@font/audiowide"
+                    android:background="@drawable/minus_plus_button"
                     android:onClick="yellowCard1Minus"
-                    android:text="@string/minusYellowCard1" />
+                    android:text="@string/minusYellowCard1"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/yellowCardTeam1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
+                    android:fontFamily="@font/press_start_2p"
                     android:text="@string/yellowCardTeam1"
-                    android:textColor="#FFEB3B" />
+                    android:textColor="#FFEB3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap" />
 
                 <Button
                     android:layout_width="52dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="16dp"
+                    android:background="@drawable/minus_plus_button"
+                    android:fontFamily="@font/audiowide"
                     android:onClick="yellowCard1Plus"
-                    android:text="@string/plusYellowCard1" />
+                    android:text="@string/plusYellowCard1"
+                    android:textSize="18sp" />
 
             </RelativeLayout>
 
@@ -107,16 +145,23 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="16dp"
+                    android:fontFamily="@font/audiowide"
+                    android:background="@drawable/minus_plus_button"
                     android:onClick="redCard1Minus"
-                    android:text="@string/minusRedCard1" />
+                    android:text="@string/minusRedCard1"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/redCardTeam1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
+                    android:fontFamily="@font/press_start_2p"
                     android:text="@string/redCardTeam1"
-                    android:textColor="#A80B0B" />
+                    android:textColor="#A80B0B"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap" />
 
                 <Button
                     android:layout_width="52dp"
@@ -124,8 +169,11 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/audiowide"
+                    android:background="@drawable/minus_plus_button"
                     android:onClick="redCard1Plus"
-                    android:text="@string/plusRedCard1" />
+                    android:text="@string/plusRedCard1"
+                    android:textSize="18sp" />
 
             </RelativeLayout>
 
@@ -135,6 +183,9 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="34dp"
                 android:layout_marginEnd="16dp"
+                android:fontFamily="@font/arbutus"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/reset_button"
                 android:onClick="resetScoreTeam1"
                 android:text="@string/resetTeam1" />
 
@@ -144,7 +195,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_marginTop="16dp"
-            android:background="@android:color/darker_gray" />
+            android:background="#000000" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -155,18 +206,25 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/audiowide"
                 android:gravity="center"
                 android:text="@string/team2"
-                android:textAllCaps="true" />
+                android:textColor="#000000"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/scoreTeam2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:fontFamily="@font/press_start_2p"
                 android:gravity="center"
                 android:text="@string/scoreTeam2"
-                android:textColor="@android:color/holo_green_dark" />
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <Button
                 android:layout_width="match_parent"
@@ -174,8 +232,12 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="8dp"
+                android:background="@drawable/gol_button"
+                android:fontFamily="@font/audiowide"
                 android:onClick="golTeam2"
-                android:text="@string/pointTeam2" />
+                android:text="@string/pointTeam2"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -194,24 +256,34 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_marginStart="16dp"
+                    android:fontFamily="@font/audiowide"
+                    android:background="@drawable/minus_plus_button"
                     android:onClick="yellowCard2Minus"
-                    android:text="@string/minusYellowCard2" />
+                    android:text="@string/minusYellowCard2"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/yellowCardTeam2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
+                    android:fontFamily="@font/press_start_2p"
                     android:text="@string/yellowCardTeam2"
-                    android:textColor="#FFEB3B" />
+                    android:textColor="#FFEB3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap" />
 
                 <Button
                     android:layout_width="52dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/audiowide"
+                    android:background="@drawable/minus_plus_button"
                     android:onClick="yellowCard2Plus"
-                    android:text="@string/plusYellowCard2" />
+                    android:text="@string/plusYellowCard2"
+                    android:textSize="18sp" />
 
             </RelativeLayout>
 
@@ -231,24 +303,34 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_marginStart="16dp"
+                    android:fontFamily="@font/audiowide"
+                    android:background="@drawable/minus_plus_button"
                     android:onClick="redCard2Minus"
-                    android:text="@string/minusRedCard2" />
+                    android:text="@string/minusRedCard2"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/redCardTeam2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
+                    android:fontFamily="@font/press_start_2p"
                     android:text="@string/redCardTeam2"
-                    android:textColor="#A80B0B" />
+                    android:textColor="#A80B0B"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap" />
 
                 <Button
                     android:layout_width="52dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/audiowide"
+                    android:background="@drawable/minus_plus_button"
                     android:onClick="redCard2Plus"
-                    android:text="@string/plusRedCard2" />
+                    android:text="@string/plusRedCard2"
+                    android:textSize="18sp" />
 
             </RelativeLayout>
 
@@ -258,6 +340,9 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="34dp"
                 android:layout_marginEnd="16dp"
+                android:fontFamily="@font/arbutus"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/reset_button"
                 android:onClick="resetScoreTeam2"
                 android:text="@string/resetTeam2" />
 
@@ -266,15 +351,19 @@
     </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
         android:layout_marginBottom="16dp"
+        android:background="@drawable/reset_button"
+        android:fontFamily="@font/audiowide"
         android:onClick="resetAll"
         android:text="@string/resetAll"
+        android:textAllCaps="true"
         android:textColor="#FFFFFF"
-        android:background="@android:color/holo_red_dark"
-        android:textAllCaps="true" />
+        android:textStyle="bold|italic" />
 
 </RelativeLayout>
